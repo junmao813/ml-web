@@ -1,0 +1,10 @@
+extends layout
+
+block head
+    script(src='/javascripts/home.js')
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDl0P4kcJOX_S6J3GH_tKcUyFNNDXpjGEo&callback=initMap' async defer)
+block content
+  link(rel='stylesheet', href='/stylesheets/home.css')
+  h1= title
+  p #{title}
+  #map
