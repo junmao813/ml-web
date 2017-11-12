@@ -28,7 +28,7 @@ var server = http.createServer(app);
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
-
+console.log("监听")
 //创建一个rpc server
 /*var rpc = require('jsonrpc2');
 var rpc_server = new rpc.Server();
